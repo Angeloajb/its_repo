@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="js/materialize.min.js">
+    </head>
+    <body>
+
+      <nav>
+        <div class="nav-wrapper indigo">
+          <a href="#" class="brand-logo">LEY DE OHM</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html">Voltaje</a></li>
+            <li><a href="badges.html">Intensidad</a></li>
+            <li><a href="collapsible.html">Resistencia</a></li>
+          </ul>
+        </div>
+      </nav>
+
+        <div class="row">
+            <form class="col s6">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input placeholder="Voltios" id="inp_voltaje" type="text" class="validate">
+                  <label>V (Voltaje)</label>
+                </div>
+                <div class="input-field col s6">
+                  <input placeholder="Amperios" id="inp_intensidad" type="text" class="validate">
+                  <label>I (Intensidad)</label>
+                </div>
+                <div class="input-field col s6">
+                  <input placeholder="Ohmios" id="inp_resistencia" type="text" class="validate">
+                  <label>R (Resistencia)</label>
+                </div>
+              </div>
+
+              <div class="row">
+                    <div class="input-field col s3">
+                      <button id="cal_vol" class="btn indigo">VOLTAJE</button>
+                    </div>
+                    <div class="input-field col s3">
+                    <input id="inp_v" type="number">
+                    <label for="disabled">Resultado</label>
+                    </div>
+
+                    <div class="input-field col s3">
+                      <button id="cal_int" class="btn indigo">INTENSIDAD</button>
+                    </div>
+                    <div class="input-field col s3">
+                    <input id="inp_i" type="number">
+                    <label for="disabled">Resultado</label>
+                    </div>
+
+                    <div class="input-field col s3">
+                      <button id="cal_res" class="btn indigo">RESISTENCIA</button>
+                    </div>
+                    <div class="input-field col s3">
+                    <input id="inp_r" type="number">
+                    <label for="disabled">Resultado</label>
+                    </div>
+              </div>        
+             </form>
+
+             <div class="col s12 m6"> 
+              <div class="card-panel teal indigo">     
+                   <img class="responsive-img" src="https://www.redeszone.net/app/uploads-redeszone.net/2017/10/distribuciones-seguridad-linux.jpg" alt="">
+              </div>
+            </div>
+             
+        </div>
+        
+
+
+        <script src="js/materialize.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
